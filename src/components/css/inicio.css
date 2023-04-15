@@ -1,148 +1,149 @@
 #inicio {
-    background-color: #f5f5f5;
-    padding: 25px 0;
-    text-align: center;
-  }
-  
+  background-color: #f5f5f5;
+  padding: 25px 0;
+  text-align: center;
+}
+
+.encabezado {
+  max-width: 10px; /* Asegura que la imagen se ajuste al ancho del contenedor */
+  height: auto; /* Evita que la imagen se distorsione */
+  margin: 0;
+}
+.encabezado img {
+  max-width: 1215px; /* Asegura que la imagen se ajuste al ancho del contenedor */
+  height: auto; /* Evita que la imagen se distorsione */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  align-content: center;
+  border-radius: 1rem;
+}
+
+.descripcion {
+  margin: 50px 0;
+}
+
+.descripcion p {
+  font-size: 1.2em;
+  color: #333;
+}
+
+.ejemplos {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.ejemplos h2 {
+  font-size: 1.5em;
+  color: #333;
+}
+
+.carrusel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carrusel img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 10px;
+}
+
+.servicios {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.servicios h2 {
+  font-size: 1.5em;
+  color: #333;
+}
+
+.servicios ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.servicios li {
+  font-size: 1.2em;
+  color: #333;
+  margin: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.servicios li:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 20px rgba(94, 255, 0, 0.352);
+}
+
+.testimonios {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.testimonios h2 {
+  font-size: 1.5em;
+  color: #333;
+}
+
+.testimonios p {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.cta {
+  margin-top: 50px;
+}
+
+.boton {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: all 0.3s ease-in-out;
+}
+
+.boton:hover {
+  background-color: #fff;
+  color: #41e524;
+  border: 1px solid #333;
+}
+@media only screen and (max-width: 600px) {
   .encabezado {
-    max-width: 10px; /* Asegura que la imagen se ajuste al ancho del contenedor */
-    height: auto; /* Evita que la imagen se distorsione */
-    margin: 0 ;
+    max-width: 100%;
   }
+
   .encabezado img {
-    max-width: 1215px; /* Asegura que la imagen se ajuste al ancho del contenedor */
-    height: auto; /* Evita que la imagen se distorsione */
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    align-content: center;
-    border-radius: 1rem;
+    max-width: 100%;
   }
-  
-  .descripcion {
-    margin: 50px 0;
-  }
-  
-  .descripcion p {
-    font-size: 1.2em;
-    color: #333;
-  }
-  
-  .ejemplos {
-    max-width: 1000px;
+}
+
+@media (max-width: 480px) {
+  .carrusel img {
+    max-width: 80%;
     margin: 0 auto;
-    margin-bottom: 50px;
   }
-  
-  .ejemplos h2 {
-    font-size: 1.5em;
-    color: #333;
-  }
-  
-  .carrusel {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
+}
+
+@media only screen and (max-width: 600px) {
   .carrusel img {
     max-width: 100%;
     height: auto;
     margin: 0 10px;
+    display: block;
   }
-  
-  .servicios {
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-  
-  .servicios h2 {
-    font-size: 1.5em;
-    color: #333;
-  }
-  
-  .servicios ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-  
-  .servicios li {
-    font-size: 1.2em;
-    color: #333;
-    margin: 10px;
-    padding: 10px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .servicios li:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 0px 20px rgba(94, 255, 0, 0.352);
-  }
-  
-  .testimonios {
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-  
-  .testimonios h2 {
-    font-size: 1.5em;
-    color: #333;
-  }
-  
-  .testimonios p {
-    font-size: 1.2em;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  .cta {
-    margin-top: 50px;
-  }
-  
-  .boton {
-    display: inline-block;
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 1.2em;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .boton:hover {
-    background-color: #fff;
-    color: #41e524;
-    border: 1px solid #333;
-  }
-  @media only screen and (max-width: 600px) {
-    .encabezado {
-      max-width: 100%;
-    }
-    
-    .encabezado img {
-      max-width: 100%;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .carrusel img {
-      max-width: 80%;
-      margin: 0 auto;
-    }
-  }
-  
-  @media only screen and (max-width: 600px) {
-    .carrusel img {
-      margin: 0 5px;
-    }
-  }
-  
-  
+}
