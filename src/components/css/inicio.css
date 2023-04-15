@@ -141,7 +141,7 @@
 
 @media only screen and (max-width: 600px) {
   .carrusel img {
-    max-width: 50%;
+    max-width: 46%;
     height: auto;
     margin: 0 10px;
     display: block;
