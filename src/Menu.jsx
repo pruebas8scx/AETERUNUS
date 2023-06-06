@@ -3,9 +3,11 @@ import "./Menu.css";
 import Inicio from "./components/Inicio";
 import Servicios from "./components/Servicios";
 import Logo from "./img/logos.png";
-import Contacto from './components/cont'
-import Faq from './components/FAQ'
-
+import Contacto from "./components/cont";
+import Faq from "./components/FAQ";
+import Cart from "./components/cart";
+import CompanyInfoComponent from "./components/CompanyInfoComponent";
+import { FaShoppingCart } from "react-icons/fa";
 
 const Menu = () => {
   const [active, setActive] = useState(0);
@@ -18,11 +20,17 @@ const Menu = () => {
     { name: "Inicio", component: <Inicio /> },
     { name: "Servicios", component: <Servicios /> },
     { name: "contacto", component: <Contacto /> },
-    { name: "FAQ", component: <Faq /> },
-    /*{ name: "Servicios", component: <Servicios /> },
-    { name: "Servicios", component: <Servicios /> },
-    { name: "Servicios", component: <Servicios /> },
-    { name: "Servicios", component: <Servicios /> },*/
+    { name: "FAQa", component: <Faq /> },
+    {
+      name: (
+        <span>
+         <FaShoppingCart />  Productos disponibles 
+        </span>
+      ),
+      component: <Cart />,
+    },{ name: "mision, vision, recursos humanos", component: <CompanyInfoComponent /> },
+     /*{ name: "Servicios", component: <Servicios /> },
+    { name: "Servicios", component: <Servicios /> },*/,
   ];
 
   return (

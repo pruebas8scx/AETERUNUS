@@ -14,7 +14,7 @@
 * {
   box-sizing: border-box;
 }
-
+  
 body {
   margin: 0;
   padding: 0;
@@ -45,15 +45,6 @@ body {
 .logo h1:hover {
   transform: scale(1.1);
 }
-
-
-/* Estilos para la barra de menú */
-.menu-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
 .menu {
   display: flex;
   justify-content: space-between;

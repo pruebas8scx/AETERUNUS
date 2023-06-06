@@ -71,6 +71,8 @@
 }
 
 .servicios li {
+  list-style-type: none;
+
   font-size: 1.2em;
   color: #333;
   margin: 10px;
@@ -147,3 +149,5 @@
     display: block;
   }
 }
+
+

@@ -1,0 +1,249 @@
+/* Cart.css */
+
+/* Estilos generales */
+.cart {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.482); /* Fondo difuminado */
+  padding: 20px;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  backdrop-filter: blur(2.5px);
+}
+
+.cat-content {
+  border: 2.5px solid rgb(47, 47, 47);
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+}
+
+.titlee {
+  display: flex;
+  align-items: center;
+}
+
+.close-button {
+  margin-right: 10px;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: red;
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.list-order {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list-order li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.list-order img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 8px;
+}
+
+.order-text span {
+  display: block;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+
+.list-order .item-name {
+  font-weight: bold;
+}
+
+.list-order .item-details {
+  display: flex;
+  align-items: center;
+}
+
+.list-order .item-price {
+  margin-left: 10px;
+}
+
+.list-order .quantity {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.list-order .quantity-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 3px 8px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 0 3px;
+}
+
+.list-order .delete-button {
+  margin-left: 10px;
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.list-order .delete-button:hover {
+  background-color: #cc0000;
+}
+
+.close-buttonn {
+  margin-right: 10px;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: red;
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.res {
+  margin-right: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-list {
+  margin-top: 20px;
+}
+
+.checkout-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.product-list h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.product-list h2 svg {
+  margin-right: 10px;
+}
+
+.product-list ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.product-list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-list li img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.product-list li span {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.product-list h2,
+.shop {
+  display: flex;
+  align-items: center;
+}
+
+.product-list li button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.img {
+  border-radius: 8px;
+}
+
+.cart-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  z-index: 999;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 767px) {
+  .product-list ul {
+    grid-template-columns: 1fr;
+  }
+
+  .cart-button {
+    bottom: 50px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+}

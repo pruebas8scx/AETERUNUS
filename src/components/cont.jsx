@@ -3,6 +3,7 @@ import { FaEnvelope, FaUser, FaPhone } from "react-icons/fa";
 import emailjs from "emailjs-com";
 import "./css/Contact.css";
 
+
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -28,7 +29,7 @@ const Contact = () => {
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <h1 className="tte">Contacanos</h1>
+        <h1 className="tte">Contáctanos</h1>
         <label>
           <FaUser />
           <input
