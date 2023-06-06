@@ -59,7 +59,18 @@ const Cart = () => {
   ];
 
   const addToCart = (product) => {
-    setProducts([...products, product]);
+    const existingProduct = products.find((p) => p.id === product.id);
+    if (existingProduct) {
+      const updatedProducts = products.map((p) => {
+        if (p.id === product.id) {
+          return { ...p, quantity: p.quantity + 1 };
+        }
+        return p;
+      });
+      setProducts(updatedProducts);
+    } else {
+      setProducts([...products, { ...product, quantity: 1 }]);
+    }
   };
 
   const removeFromCart = (productId) => {

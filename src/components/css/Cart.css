@@ -24,7 +24,9 @@
   padding: 20px;
   border-radius: 20px;
   margin-bottom: 10px;
+  overflow: auto; /* Agregado */
 }
+
 
 .title {
   display: flex;
