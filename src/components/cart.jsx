@@ -155,7 +155,7 @@ const Cart = () => {
                           >
                             -
                           </button>
-                          <span>{product.quantity}</span>
+                          <span className="quantity-button-id">{product.quantity}</span>
                           <button
                             className="quantity-button"
                             onClick={() => increaseQuantity(product.id)}
